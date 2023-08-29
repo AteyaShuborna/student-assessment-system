@@ -1,0 +1,22 @@
+{% extends 'base_login.html' %} {% block login %}
+
+<!-- ! ADMIN LOGIN FROM !  -->
+<form class="clx" method="POST" action="/admin_authinticate">
+    <h1><font color="white">LOGIN PAGE FOR ADMINS</h1>
+
+    <!-- admin id -->
+    <div class="mb-3">
+        <label for="exampleInputEmail1 ">Admin ID</label>
+        <input type="email " class="form-control " name='adminid' aria-describedby="emailHelp " placeholder="Enter your Admin ID " autocomplete="off">
+    </div>
+
+    <!-- password -->
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+
+    <button type="submit " class="btn btn-outline-primary">LOGIN</button>
+</form>
+
+{% endblock %}

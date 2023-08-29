@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !BootStrap! -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- !BootStrap! -->
+    <style>
+        form {
+            padding: 10% 5% 12%;
+        }
+    </style>
+    <title>SUBMIT SCHOLARSHIP</title>
+</head>
+<body>
+  <!-- !NAVIGATION BAR! -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="/">PowerLine Academic Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item secondary">
+                    <a class="nav-link" href="/student_login">STUDENT<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item secondary">
+                    <a class="nav-link" href="/teacher_login">TEACHER</a>
+                </li>
+                <li class="nav-item secondary">
+                    <a class="nav-link" href="/admin_login">ADMIN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class='cls'>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <form method = "POST" action="/add_application">
+    <div class="form-group row">
+        <label for="student_id" class="col-4 col-form-label">Student ID</label> 
+        <div class="col-8">
+        <div class="input-group">
+            <div class="input-group-prepend">
+            <div class="input-group-text">
+                <i class="fa fa-id-card-o"></i>
+            </div>
+            </div> 
+            <input id="student_id" name="student_id" type="text" class="form-control">
+        </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="credit" class="col-4 col-form-label">Credit</label> 
+        <div class="col-8">
+        <input id="credit" name="credit" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="result" class="col-4 col-form-label">Result</label> 
+        <div class="col-8">
+        <input id="result" name="result" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="description" class="col-4 col-form-label">Description</label> 
+        <div class="col-8">
+        <input id="description" name="description" type="text" class="form-control">
+        </div>
+    </div> 
+    <div class="form-group row">
+        <div class="offset-4 col-8">
+        <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    </form>
+
+    </div>
+</body>
+</html>

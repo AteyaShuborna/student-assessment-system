@@ -1,0 +1,23 @@
+{% extends 'base_login.html' %} {% block login %}
+
+<!-- ! ADMIN LOGIN FROM !  -->
+<form class="clx" method="POST" action="/teacher_authinticate">
+    <h1>LOGIN PAGE FOR TEACHER</h1>
+
+    <!-- teacher id -->
+    <div class="mb-3">
+        <label for="exampleInputEmail1 ">Teacher ID</label>
+        <input type="email " class="form-control " name='teacherid' aria-describedby="emailHelp " placeholder="Enter your Teacher ID " autocomplete="off">
+    </div>
+
+    <!-- password -->
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+
+    <button type="submit " class="btn btn-outline-primary">Submit</button>
+    <a class="btn btn-outline-warning" href="/forgotten_password" role="button">Forgotten Password</a>
+</form>
+
+{% endblock %}

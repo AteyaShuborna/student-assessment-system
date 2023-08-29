@@ -1,0 +1,26 @@
+{% extends 'dashboard_base.html' %} {% block profile %}
+<div class='clx'>
+
+    <h1>Welcome, {{student_name}}</h1>
+    <br>
+    <a class="btn btn-primary" href="/student_profile_edit_request" role="button">edit profile</a>
+    <a class="btn btn-primary" href="/logout_student" role="button">logout</a>
+
+</div>
+
+{% endblock %} {{admin_id}} {% block operations %}
+
+<div class='cls'>
+
+    <h3>
+    <font color="white">Student Operations</h3>
+    <a href="{{ url_for('add_course') }}" class="btn btn-outline-primary btn-lg btn-block" role="button">ADD COURSE</a>
+    <a href="{{ url_for('drop_course') }}" class="btn btn-outline-primary btn-lg btn-block" role="button">DROP COURSE</a>
+    <a href="{{ url_for('show_all_courses') }}" class="btn btn-outline-success btn-lg btn-block" role="button">SHOW ALL ASSESMENTS</a>
+    <a href="{{ url_for('show_all_marks') }}" class="btn btn-outline-success btn-lg btn-block" role="button">SHOW ALL MARKS</a>
+    <a href="{{ url_for('scholarship_application') }}" class="btn btn-outline-warning btn-lg btn-block" role="button">APPLY FOR SCHOLARSHIP</a>
+    <a href="{{ url_for('view_scholarship') }}" class="btn btn-outline-warning btn-lg btn-block" role="button">VIEW SCHOLARSHIP STATUS</a>
+
+</div>
+
+{% endblock %}

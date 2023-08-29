@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !BootStrap! -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- !BootStrap! -->
+    <style>
+        form {
+            padding: 10% 5% 12%;
+        }
+    </style>
+    <title>Scholarship Management</title>
+</head>
+<body>
+
+<div class='cls'></div>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <form action =" /commit_scholarship_update " method= "POST">
+        <div class="form-group row">
+            <label for="student_id" class="col-4 col-form-label">STUDENT ID:</label>
+            <div class="col-8">
+              <input id="student_id" name="student_id" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-4">SCHOLARSHIP STATUS:</label>
+            <div class="col-8">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input name="status" id="status_0" type="radio" class="custom-control-input" value="APPROVED">
+                <label for="status_0" class="custom-control-label">APPROVED</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input name="status" id="status_1" type="radio" class="custom-control-input" value="DENIED">
+                <label for="status_1" class="custom-control-label">DENIED</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-4 col-8">
+              <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+      </form>
+
+    </body>
+</html>
